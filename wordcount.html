@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet"
+	  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+	 integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+	 crossorigin="anonymous"/>
+     <link rel="stylesheet" href="style.css">
+	<meta name="viewport" content ="width=device-width,initial-scale=1.0"/>
+	<title>Word_Counter</title>
+</head>
+  <body> 
+    <div class="container-fluid" style="height: 100vh;">
+        <div class="row" style="height: 100vh;">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6 my-auto">
+                <div class="jumbotron p-3">
+                    <h1 class="text-center">  Word Counter </h1>
+                    <hr>
+                    <textarea id="text" onkeyup="countWord()" onpaste="countWord()" rows="10" cols="70" class="form-control"  placeholder="Type/Paste Your Text Here"></textarea>
+                    <div class="row">
+                        <div class="col">
+                            Word Count: <span id="wordCount">0</span>
+                        </div>
+                        <div class="col">
+                            <button id="clearBtn" class="btn btn-danger">Clear</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+
+</body>
+</html>
